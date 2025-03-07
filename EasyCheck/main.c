@@ -20,6 +20,7 @@ int main(void) {
             sprintf(cmd,"chkdsk %s/f",input);
             // printf("命令为:%s\n",cmd);
             system(cmd);
+			printf("已完成修补");
             system("pause");
             break;
         case 2:
@@ -27,6 +28,7 @@ int main(void) {
             char command[15];
             sprintf(command,"chkdsk %s/r",input);
             system(command);
+			printf("已完成修补");
             system("pause");
             break;
         default: ;
